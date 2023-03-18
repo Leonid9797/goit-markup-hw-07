@@ -333,10 +333,16 @@ ul {
   }
 }
 .hero-image {
+  text-align: center;
+  padding-top: 112px;
+  padding-bottom: 112px;
   max-width: 1440px;
-  margin: 0 auto;
-  padding-top: 188px;
-  padding-bottom: 188px;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: var(--color-primary);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
@@ -354,6 +360,12 @@ ul {
         rgba(46, 47, 66, 0.7)
       ),
       url("../images/people-office@2x.png");
+  }
+}
+@media (min-width: 1200px) {
+  .hero-image {
+    padding-top: 188px;
+    padding-bottom: 188px;
   }
 }
 .button-service {
